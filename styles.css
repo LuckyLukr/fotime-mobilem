@@ -560,6 +560,10 @@ body {
 }
 
 
+/* V3.4b — the runtime's status slot: muted by default, React's red on error. */
+.jean-site-shell [data-jean-slot='status'] { color: var(--color-muted); }
+.jean-site-shell [data-jean-slot='status'][data-jean-status='error'] { color: #EF4444; }
+
 /* V3.4b part 2 — the shared widget skeletons, painted from theme tokens. */
 .jean-widget-empty { text-align: center; font-size: 0.875rem; color: var(--color-muted); margin: 0; }
 .jean-widget .jean-gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1rem; }
